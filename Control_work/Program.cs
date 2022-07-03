@@ -15,3 +15,13 @@ void FillArray(string[] collection)
         collection[i] = Console.ReadLine();
     }
 }
+int GetSize(string[] col)
+{
+    int size = 0;
+    for (int i = 0; i < col.Length; i++)
+    {
+        if (col[i].Length <= 3)
+            size++;
+    }
+    return size;
+}
