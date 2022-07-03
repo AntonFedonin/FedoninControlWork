@@ -3,59 +3,71 @@
 //  либо задать на старте выполнения алгоритма. При решении не рекомендуется пользоваться коллекциями, 
 //  лучше обойтись исключительно массивами.
 
-Console.Write("Задайте размер массива: ");
-int arraySize = int.Parse(Console.ReadLine());
-string[] array = new string[arraySize];
+bool run = true;
+while (run)
+{
+    Console.Clear();
+    Console.Write("Задайте размер массива: ");
+    int arraySize = int.Parse(Console.ReadLine());
+    string[] array = new string[arraySize];
 
-void FillArray(string[] collection)
-{
-    Console.WriteLine("Введите элементы массива через клавишу Enter");
-    for (int i = 0; i < collection.Length; i++)
+    void FillArray(string[] collection)
     {
-        collection[i] = Console.ReadLine();
-    }
-}
-int GetSize(string[] col)
-{
-    int size = 0;
-    for (int i = 0; i < col.Length; i++)
-    {
-        if (col[i].Length <= 3)
-            size++;
-    }
-    return size;
-}
-string[] FillNewArray(string[] arr, string[] newArr)
-{
-    int index = 0;
-    for (int i = 0; i < arr.Length; i++)
-    {
-        if (arr[i].Length <= 3)
+        Console.WriteLine("Введите элементы массива через клавишу Enter");
+        for (int i = 0; i < collection.Length; i++)
         {
-            newArr[index] = arr[i];
-            index++;
+            collection[i] = Console.ReadLine();
         }
     }
-    return newArr;
-}
-void PrintArray(string[] col)
-{
-    Console.Write("[");
-    for (int i = 0; i < col.Length; i++)
+
+    int GetSize(string[] col)
     {
-        if (i < col.Length - 1)
-            Console.Write($"{col[i]}" + $", ");
-        else
-            Console.Write($"{col[i]}");
+        int size = 0;
+        for (int i = 0; i < col.Length; i++)
+        {
+            if (col[i].Length <= 3)
+                size++;
+        }
+        return size;
     }
-    Console.Write("]");
+
+    string[] FillNewArray(string[] arr, string[] newArr)
+    {
+        int index = 0;
+        for (int i = 0; i < arr.Length; i++)
+        {
+            if (arr[i].Length <= 3)
+            {
+                newArr[index] = arr[i];
+                index++;
+            }
+        }
+        return newArr;
+    }
+
+    void PrintArray(string[] col)
+    {
+        Console.Write("[");
+        for (int i = 0; i < col.Length; i++)
+        {
+            if (i < col.Length - 1)
+                Console.Write($"{col[i]}" + $", ");
+            else
+                Console.Write($"{col[i]}");
+        }
+        Console.Write("]");
+    }
+
+    FillArray(array);
+    int newSize = GetSize(array);
+    string[] newArray = new string[newSize];
+    newArray = FillNewArray(array, newArray);
+    Console.WriteLine();
+    PrintArray(array);
+    Console.Write(" -> ");
+    PrintArray(newArray);
+    Console.WriteLine();
+    Console.WriteLine();
+    Console.WriteLine("Попробуем ещё раз? y/n");
+    run = Console.ReadKey().Key == ConsoleKey.Y;
 }
-
-FillArray(array);
-int newSize = GetSize(array);
-string[] newArray = new string[newSize];
-newArray=FillNewArray(array, newArray);
-
-PrintArray(array);
-Console.Write(" -> ");
-PrintArray(newArray);
