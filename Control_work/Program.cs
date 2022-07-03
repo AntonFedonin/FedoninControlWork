@@ -38,3 +38,15 @@ string[] FillNewArray(string[] arr, string[] newArr)
     }
     return newArr;
 }
+void PrintArray(string[]col)
+{
+    Console.Write("[");
+    for (int i = 0; i < col.Length; i++)
+    {
+        if(i<col.Length)
+        Console.Write($"{col[i]}"+$", ");
+        else
+        Console.Write($"{col[i]}");
+    }
+    Console.Write("]");
+}
