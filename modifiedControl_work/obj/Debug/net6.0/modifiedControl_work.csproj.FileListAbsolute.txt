@@ -1,0 +1,15 @@
+C:\Users\Федонин Антон\Desktop\Контрольная работа\modifiedControl_work\bin\Debug\net6.0\modifiedControl_work.exe
+C:\Users\Федонин Антон\Desktop\Контрольная работа\modifiedControl_work\bin\Debug\net6.0\modifiedControl_work.deps.json
+C:\Users\Федонин Антон\Desktop\Контрольная работа\modifiedControl_work\bin\Debug\net6.0\modifiedControl_work.runtimeconfig.json
+C:\Users\Федонин Антон\Desktop\Контрольная работа\modifiedControl_work\bin\Debug\net6.0\modifiedControl_work.dll
+C:\Users\Федонин Антон\Desktop\Контрольная работа\modifiedControl_work\bin\Debug\net6.0\modifiedControl_work.pdb
+C:\Users\Федонин Антон\Desktop\Контрольная работа\modifiedControl_work\obj\Debug\net6.0\modifiedControl_work.csproj.AssemblyReference.cache
+C:\Users\Федонин Антон\Desktop\Контрольная работа\modifiedControl_work\obj\Debug\net6.0\modifiedControl_work.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Федонин Антон\Desktop\Контрольная работа\modifiedControl_work\obj\Debug\net6.0\modifiedControl_work.AssemblyInfoInputs.cache
+C:\Users\Федонин Антон\Desktop\Контрольная работа\modifiedControl_work\obj\Debug\net6.0\modifiedControl_work.AssemblyInfo.cs
+C:\Users\Федонин Антон\Desktop\Контрольная работа\modifiedControl_work\obj\Debug\net6.0\modifiedControl_work.csproj.CoreCompileInputs.cache
+C:\Users\Федонин Антон\Desktop\Контрольная работа\modifiedControl_work\obj\Debug\net6.0\modifiedControl_work.dll
+C:\Users\Федонин Антон\Desktop\Контрольная работа\modifiedControl_work\obj\Debug\net6.0\refint\modifiedControl_work.dll
+C:\Users\Федонин Антон\Desktop\Контрольная работа\modifiedControl_work\obj\Debug\net6.0\modifiedControl_work.pdb
+C:\Users\Федонин Антон\Desktop\Контрольная работа\modifiedControl_work\obj\Debug\net6.0\modifiedControl_work.genruntimeconfig.cache
+C:\Users\Федонин Антон\Desktop\Контрольная работа\modifiedControl_work\obj\Debug\net6.0\ref\modifiedControl_work.dll
