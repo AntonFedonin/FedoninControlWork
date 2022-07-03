@@ -7,7 +7,11 @@ Console.Write("Задайте размер массива: ");
 int arraySize = int.Parse(Console.ReadLine());
 string[] array = new string[arraySize];
 
-void FillArray(string[]collection)
+void FillArray(string[] collection)
 {
-    
+    Console.WriteLine("Введите элементы массива через клавишу Enter");
+    for (int i = 0; i < collection.Length; i++)
+    {
+        collection[i] = Console.ReadLine();
+    }
 }
