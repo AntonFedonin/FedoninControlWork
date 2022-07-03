@@ -70,4 +70,5 @@ while (run)
     Console.WriteLine();
     Console.WriteLine("Попробуем ещё раз? y/n");
     run = Console.ReadKey().Key == ConsoleKey.Y;
+    Console.WriteLine("Спасибо что воспользовались моим приложением");
 }
