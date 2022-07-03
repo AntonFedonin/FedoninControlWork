@@ -27,26 +27,35 @@ int GetSize(string[] col)
 }
 string[] FillNewArray(string[] arr, string[] newArr)
 {
-    int index=0;
+    int index = 0;
     for (int i = 0; i < arr.Length; i++)
     {
         if (arr[i].Length <= 3)
         {
-            newArr[index]=arr[i];
+            newArr[index] = arr[i];
             index++;
         }
     }
     return newArr;
 }
-void PrintArray(string[]col)
+void PrintArray(string[] col)
 {
     Console.Write("[");
     for (int i = 0; i < col.Length; i++)
     {
-        if(i<col.Length)
-        Console.Write($"{col[i]}"+$", ");
+        if (i < col.Length - 1)
+            Console.Write($"{col[i]}" + $", ");
         else
-        Console.Write($"{col[i]}");
+            Console.Write($"{col[i]}");
     }
     Console.Write("]");
 }
+
+FillArray(array);
+int newSize = GetSize(array);
+string[] newArray = new string[newSize];
+newArray=FillNewArray(array, newArray);
+
+PrintArray(array);
+Console.Write(" -> ");
+PrintArray(newArray);
