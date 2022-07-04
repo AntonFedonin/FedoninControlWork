@@ -45,27 +45,30 @@ while (run)
         return newArr;
     }
 
-    void PrintArray(string[] col)
+    string PrintArray(string[] arr)
     {
-        Console.Write("[");
-        for (int i = 0; i < col.Length; i++)
+        string res = $"[";
+        for (int i = 0; i < arr.Length; i++)
         {
-            if (i < col.Length - 1)
-                Console.Write($"{col[i]}" + $", ");
+            if (i < arr.Length - 1)
+                res += $"{arr[i]}" + $", ";
             else
-                Console.Write($"{col[i]}");
+                res += $"{arr[i]}";
         }
-        Console.Write("]");
+        res += $"]";
+        return res;
     }
 
     FillArray(array);
     int newSize = GetSize(array);
     string[] newArray = new string[newSize];
     newArray = FillNewArray(array, newArray);
+    string input = PrintArray(array);
+    string output = PrintArray(newArray);
     Console.WriteLine();
-    PrintArray(array);
+    Console.Write(input);
     Console.Write(" -> ");
-    PrintArray(newArray);
+    Console.WriteLine(output);
     Console.WriteLine();
     Console.WriteLine();
     Console.WriteLine("Попробуем ещё раз? y/n");
